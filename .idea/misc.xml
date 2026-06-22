@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Black">
-    <option name="sdkName" value="D:\Develop\miniconda3\envs\myenv" />
-  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/backend/legal/pom.xml" />
+        <option value="$PROJECT_DIR$/legal_agent/backend/legal/pom.xml" />
       </list>
     </option>
   </component>
