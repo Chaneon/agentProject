@@ -1,0 +1,10 @@
+# 存储过程名称: sp_calculate_deposit_interest_impact
+
+功能描述: 计算存款利率变动对利息支出的影响。
+
+参数列表(按顺序):
+1. p_org_id (INT) - 机构ID
+2. p_date (DATE) - 测算日期（格式 YYYY-MM-DD）
+3. p_rate_delta_bp (INT) - 利率变动基点（正数为上调）
+
+返回值: 一个结果集，包含一列 impact_value (DECIMAL)，表示利息支出的变动金额（万元）。

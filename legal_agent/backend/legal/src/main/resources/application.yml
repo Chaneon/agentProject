@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: legal-ai-agent
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+sa-token:
+  token-name: token
+  timeout: 43200
+  active-timeout: -1
+  is-concurrent: true
+  is-share: true
+  token-style: uuid
+  is-log: false
+  jwt-secret-key: legal-ai-secret-key-2024
+
+legal:
+  ai:
+    python-service-url: ${PYTHON_API_URL:http://localhost:8001}
+    file-upload-path: ${FILE_UPLOAD_PATH:/data/uploads}

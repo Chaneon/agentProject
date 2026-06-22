@@ -1,0 +1,26 @@
+# ============================================================
+# 电商智能客服Agent - Python 依赖包
+# 安装命令：pip install -r requirements.txt
+# ============================================================
+
+# Web框架
+fastapi >= 0.104.1
+uvicorn[standard] >= 0.24.0
+python-multipart >= 0.0.6
+
+# 数据库
+sqlalchemy >= 2.0.23
+pymysql >= 1.1.0
+redis >= 5.0.1
+pymilvus >= 2.3.6
+
+# AI核心
+openai >= 1.6.1
+sentence-transformers >= 2.2.2
+langgraph >= 0.0.20
+
+# 工具
+python-dotenv >= 1.0.0
+pydantic >= 2.5.0
+pydantic-settings >= 2.1.0
+loguru >= 0.7.2
