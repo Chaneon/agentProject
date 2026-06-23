@@ -26,4 +26,9 @@ class Settings(BaseSettings):
     port: int = int(os.getenv("PORT", "8001"))
     debug: bool = os.getenv("DEBUG", "False").lower() == "true"
 
+    # 业务
+    SESSION_TTL_SECONDS: int = int(os.getenv("SESSION_TTL_SECONDS", "1800"))
+    MAX_SHORT_TERM_MESSAGES: int = int(os.getenv("MAX_SHORT_TERM_MESSAGES", "20"))
+    TRANSFER_QUEUE_KEY: str = os.getenv("TRANSFER_QUEUE_KEY", "transfer:queue")
+
 settings = Settings()
